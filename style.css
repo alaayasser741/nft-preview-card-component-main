@@ -1,0 +1,162 @@
+:root{
+    --Soft_blue:hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+    --main_BG: hsl(217, 54%, 11%);
+    --card_BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main_BG);
+}
+p{
+    font-size: 18px;
+}
+.container{
+    text-align: center;
+}
+.box{
+    background-color: var(--card_BG);
+    width: 30%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+}
+.box .content{
+    padding: 30px;
+}
+.box .content .imgnft{
+    position: relative;
+    cursor: pointer;
+}
+.box .content img[alt="image-equilibrium"]{
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    cursor: pointer;
+    z-index: 555;
+}
+.box .content .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aqua;
+    width: 414px;
+    height: 414px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out ;
+    -webkit-transition: opacity 0.3s ease-in-out ;
+    -moz-transition: opacity 0.3s ease-in-out ;
+    -ms-transition: opacity 0.3s ease-in-out ;
+    -o-transition: opacity 0.3s ease-in-out ;
+    z-index: 999;
+}
+.box .content img[alt="icon-view"]{
+    width: 64px;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+}
+
+.box .content .imgnft .overlay:hover{
+    opacity: 50%;
+}
+.box .content .text{
+    text-align: left;
+}
+.box .content .text h1{
+    color: var(--White);
+    font-weight: 700;
+}
+.box .content .text h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.box .content .text p{
+    color: var(--Soft_blue);
+    font-size: 25px;
+    font-weight: 300;
+}
+.box .content .time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.box .content .time .price{
+    display: flex;
+    flex-direction: row;
+}
+.box .content .time .price img{
+    width: 15px;
+    height: 26px;
+    
+}
+.box .content .time .price h3{
+    margin: 0 10px;
+    color: var(--Cyan);
+    font-size: 20px;
+}
+.box .content .time .clock{
+    display: flex;
+    flex-direction: row;
+}
+.box .content .time .clock img{
+    width: 23px;
+    height: 23px;
+}
+.box .content .time .clock h3{
+    margin: 0 10px;
+    color: var(--Soft_blue);
+    font-size: 20px;
+}
+hr{
+    background-color: var(--line);
+    height: 1px;
+    border: none;
+}
+.box .content .avatar{
+display: flex;
+margin: 20px 0;
+align-items: center;
+}
+.box .content .avatar img{
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.box .content .avatar p{
+    margin-left: 20px;
+    font-size: 25px;
+    color: var(--Soft_blue);
+    font-weight: 300;
+}
+.box .content .avatar p span{
+    color: var(--White);
+}
+.box .content .avatar p span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+@media (max-width:1440px) {
+    .box{
+        width: 400px;
+        margin:50px auto;
+    }
+}
