@@ -50,8 +50,8 @@ p{
     left: 0;
     top: 0;
     background-color: aqua;
-    width: 414px;
-    height: 414px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out ;
