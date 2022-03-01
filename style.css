@@ -18,7 +18,7 @@ p{
 }
 .box{
     background-color: var(--card_BG);
-    width: 30%;
+    width: 25%;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -26,10 +26,10 @@ p{
     -o-border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 10% auto;
+    margin: 40px auto;
 }
 .box .content{
-    padding: 30px;
+    padding: 25px;
 }
 .box .content .imgnft{
     position: relative;
@@ -51,7 +51,7 @@ p{
     top: 0;
     background-color: aqua;
     width: 100%;
-    height: 100%;
+    height: 99%;
     border-radius: 15px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out ;
@@ -84,7 +84,7 @@ p{
 }
 .box .content .text p{
     color: var(--Soft_blue);
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
 }
 .box .content .time{
@@ -127,7 +127,6 @@ hr{
 }
 .box .content .avatar{
 display: flex;
-margin: 20px 0;
 align-items: center;
 }
 .box .content .avatar img{
@@ -137,13 +136,13 @@ align-items: center;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     vertical-align: middle;
 }
 .box .content .avatar p{
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 18px;
     color: var(--Soft_blue);
     font-weight: 300;
 }
