@@ -6,44 +6,36 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap" rel="stylesheet">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-  <div class="container">
-    <div class="box">
-      <div class="content">
-        <div class="imgnft">
-          <img src="images/image-equilibrium.jpg" alt="image-equilibrium">
-          <div class="overlay">
-            <img src="images/icon-view.svg" alt="icon-view">
+  <main>
+    <div class="card">
+      <div class="card__img">
+        <img src="images/image-equilibrium.jpg" alt="image-equilibrium">
+        <div class="overlay">
+          <img src="images/icon-view.svg" alt="view">
         </div>
+      </div>
+      <div class="card__body">
+        <a href="#">Equilibrium #3429</a>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="body__state">
+          <span><img src="images/icon-ethereum.svg" alt="ethereum"> 0.041ETH</span>
+          <span><img src="images/icon-clock.svg" alt="clock-img"> 3 days left</span>
         </div>
-        <div class="text">
-          <h1>Equilibrium #3429</h1>
-          <p>Our Equilibrium collection promotes balance and calm.</p>
-        </div>
-        <div class="time">
-          <div class="price">
-            <img src="images/icon-ethereum.svg" alt="icon-ethereum">
-            <h3>0.041 ETH</h3>
+        <div class="card__avatar">
+          <div class="avatar__img">
+            <img src="images/image-avatar.png" alt="avatar__img">
           </div>
-          <div class="clock">
-            <img src="images/icon-clock.svg" alt="icon-clock">
-            <h3>3 days left</h3>
-          </div>
-        </div>
-        <hr>
-        <div class="avatar">
-          <img src="images/image-avatar.png" alt="image-avatar">
-          <p>Creation of <span>Jules Wyvern</span></p>
+          <span>Creation of <a href="#">Jules Wyvern</a></span>
         </div>
       </div>
     </div>
-  </div>
-  </div>
+  </main>
 </body>
 </html>
